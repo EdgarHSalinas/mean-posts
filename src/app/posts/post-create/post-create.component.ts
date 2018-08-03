@@ -5,5 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './post-create.component.html'
 })
 export class PostCreateComponent {
-  
+  newPost = 'NONE';
+
+  onAddPost() {
+    this.newPost = 'The users Post';
+  }
 }
