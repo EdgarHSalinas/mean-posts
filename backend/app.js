@@ -32,12 +32,12 @@ app.get("/api/posts", (req, res, next) => {
     {
       id: "fadf12421l",
       title: "First server-side post",
-      content: "This is coming from the server"
+      content: "This is First Post coming from the server"
     },
     {
       id: "ksajflaj132",
       title: "Second server-side post",
-      content: "This is coming from the server!"
+      content: "This is Second Post coming from the server!"
     }
   ];
   res.status(200).json({
