@@ -11,8 +11,12 @@
         minlength="3"
         placeholder="Post Title"
         #title="ngModel">
-      <mat-error *ngIf="title.invalid">Please enter a post title.</mat-error>
+      <mat-error *ngIf="title.invalid">Please enter a title.</mat-error>
     </mat-form-field>
+    <div>
+      <button mat-stroked-button type="button" (click)="fileOpenPicker.click()">Pick Image</button>
+      <input type="file" #fileOpenPicker>
+    </div>
     <mat-form-field>
       <textarea
         matInput
@@ -22,7 +26,7 @@
         required
         placeholder="Post Content"
         #content="ngModel"></textarea>
-      <mat-error *ngIf="content.invalid">Please enter a post title.</mat-error>
+      <mat-error *ngIf="content.invalid">Please enter a message.</mat-error>
     </mat-form-field>
     <button
       mat-raised-button
